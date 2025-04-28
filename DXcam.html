@@ -4,38 +4,39 @@
 </head>
 
 <style>
-.endis		{background-color:gray}
-.cams div	{width:33%; float:left; height:144px}
+.endis		{width:600px}
+.cams div	{border-radius:0px;width:33%; float:left; height:144px;border-width:1px;border-color:black;border-style:solid;}
 .cams		{width:100%; overflow:auto;}
-body		{color:black; }
-input		{background-color:#6c6b69; border-color:#b0b0b0;  border-radius: 5px 2px 11px 2px;}
-button		{width: 200px; text-align:left; background-color: #FCFCFD; border-radius: 5px 2px 11px 2px;}
-
+body		{color:white; background-color: black;font-family:Arial, Helvetica, sans-serif; }
+input		{background-color:#6c6b69; border-color:black;width: 100px;  border-radius: 5px 2px 11px 2px; border-width:2px}
+button		{font-family:Arial, Helvetica, sans-serif;width: 160px; text-align:left; color:white; background-color: #d4d2d4; border-radius: 5px 2px 11px 2px;}
+div			{border-radius: 3px 3px 3px 9px;}
+.mf			{text-align:center;background-color:#4b4b4d;position:middle;width:90%;border-width:1px;border-color:black;border-style:solid;border-radius:8px 0px 0px 0px}
 </style>
 <body>
-<div class="endis">
-Surveillance
-<div style="color:#615f62; width:600px">
+<div class="endis" >
+<div style="width:20%;border-radius:5px;background: linear-gradient(160deg, rgba(55, 56, 88, 1) 0%, rgba(165, 164, 245, 1) 100%);"> <img height="18px" width="18px"align="left" alt="DXlogo" width="40%" src="data:image/jpeg;base64,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"></img>Surveillance</div>
+<div style="width:600px;background-color:#615f62">
 Active Window Options
 <div>
 <button>Camera Status</button><input placeholder="On" type="text"></input>
 <br>
-<button>Door Acces</button>
+<button>Door Access</button><input placeholder="On" type="text"></input>
 <br>
-<button>Door Status</button>
+<button>Door Status</button><input placeholder="On" type="text"></input>
 <br>
-<button>Turret Status</button>
+<button>Turret Status</button><input placeholder="On" type="text"></input>	
 </div>
 <div class="cams">
 <div >cam1</div>
 <div >cam2</div>
 <div >cam3</div>
 </div>
-<div>
+<div class="mf">
 click on camera
 </div>
 </div>
-<button></button>
+<div style="transform: translate(90%, 90%);"><button style="align:right;width:auto">Disconnect</button></div>
 </div>
 </body>
 </html>
