@@ -1,0 +1,41 @@
+<html>
+
+<head>
+</head>
+
+<style>
+.endis		{background-color:gray}
+.cams div	{width:33%; float:left; height:144px}
+.cams		{width:100%; overflow:auto;}
+body		{color:black; }
+input		{background-color:#6c6b69; border-color:#b0b0b0;  border-radius: 5px 2px 11px 2px;}
+button		{width: 200px; text-align:left; background-color: #FCFCFD; border-radius: 5px 2px 11px 2px;}
+
+</style>
+<body>
+<div class="endis">
+Surveillance
+<div style="color:#615f62; width:600px">
+Active Window Options
+<div>
+<button>Camera Status</button><input placeholder="On" type="text"></input>
+<br>
+<button>Door Acces</button>
+<br>
+<button>Door Status</button>
+<br>
+<button>Turret Status</button>
+</div>
+<div class="cams">
+<div >cam1</div>
+<div >cam2</div>
+<div >cam3</div>
+</div>
+<div>
+click on camera
+</div>
+</div>
+<button></button>
+</div>
+</body>
+</html>
